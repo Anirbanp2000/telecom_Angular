@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<div class="alert alert-success" role="alert" *ngIf="loginsuccess">{{loginsuccess}}</div>
+<div class="alert alert-danger" role="alert" *ngIf="loginerror">{{loginerror}}</div>
+<div class="container-fluid login-wrapper" id="c1">
+    <div class="container login-inner text-light p-5" style="border-radius: 25px;">
+        <!-- <div class="card" style="border-radius: 25px;"> -->
+        <div class="card-body p-md-5">
+            <h1 class="display-4 text-dark text-center pb-3">Login Here</h1>
+            <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4" >
+                    <input type="text" id="form2Example1" autocomplete="off" class="form-control" name="contactNumber" id="name"
+                        [(ngModel)]="teleuser.contactNumber" placeholder="Enter your contact number" required />
+                    <label class="form-label" for="form2Example1">Phone Number</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="form2Example2" class="form-control" [(ngModel)]="teleuser.password"
+                        name="password" id="password" placeholder="Enter password" required />
+                    <label class="form-label" for="form2Example2">Password</label>
+                </div>
+
+                <!-- Submit button -->
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-block mb-4"
+                        (click)="doLogin(teleuser)">Login</button>
+                </div>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                    <p>Don't have account? <a href="register">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- </div> -->
+    </div>
+</div>

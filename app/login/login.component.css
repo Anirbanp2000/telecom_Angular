@@ -1,0 +1,21 @@
+#c1{
+    /* background-image:url("../assets/images/bg1.jpg") */
+    /* background-color:#aeb8ee; */
+    background-image: url("../../assets/images/bgg.jpg");
+}
+.login-wrapper{
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-inner{
+    background-color: #fff;
+    width: 60%;
+    min-width: 50%;
+    color: #000 !important;
+}
+
+.form-control{
+    background: transparent;
+}

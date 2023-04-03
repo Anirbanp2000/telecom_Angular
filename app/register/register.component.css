@@ -1,0 +1,20 @@
+/* .signup-wrapper{
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.signup-wrapper{
+    background-color: #aeb8ee;
+    background-image: url("../../assets/images/bgg2.jpg");
+}
+.signup-inner{
+    background-color: #fff;
+    width: 60%;
+    min-width: 70%;
+    color: #000 !important;
+}
+.form-control{
+    background: transparent;
+}

@@ -1,0 +1,95 @@
+<app-navbar></app-navbar>
+<div class="container my-5" style="background-color: #aeb8ee;">
+  <div class="text-center mb-5">
+    <h1 class="display-4 pb-4 text-capitalize font-weight-bold">Recharge <span>Plans</span></h1>
+  </div>
+
+  <!-- <div class="my-5 mx-4 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between">  -->
+     <!-- <div class="text-center">
+      <span style="font-weight: 600;">STANDARD</span>
+      <h1 class="my-2 font-weight-bold">&#8377;299</h1>
+      <small class="text-uppercase text-secondary">MONTHLY</small>
+    </div>
+    <div class="text-center text-uppercase text-secondary">
+      <small class="d-block" style="font-weight: 600;">Unlimited Calls</small>
+      <small class="d-block my-3" style="font-weight: 600;">1GB data per Day</small>
+      <small class="d-block" style="font-weight: 600;">100 SMS</small>
+    </div>
+    <div class="text-center">
+      <button type="submit" (click)="submit1()"  class="btn btn-primary text-white px-5 py-3"  style="border-radius: 30px;">Select Plan</button>
+
+    </div>
+  </div>
+
+  <div class="my-5 mx-4 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between">
+    <div class="text-center">
+      <span style="font-weight: 600;">SILVER</span>
+      <h1 class="my-2 font-weight-bold">&#8377;599</h1>
+      <small class="text-uppercase text-secondary">QUARTERLY</small>
+    </div>
+    <div class="text-center text-uppercase text-secondary">
+      <small class="d-block" style="font-weight: 600;">Unlimited Calls</small>
+      <small class="d-block my-3" style="font-weight: 600;">3GB Data per day</small>
+      <small class="d-block" style="font-weight: 600;">300 SMS</small>
+    </div>
+    <div class="text-center">
+      <button type="submit" (click)="submit2()" class="btn btn-primary text-white px-5 py-3"  style="border-radius: 30px;">Select Plan</button>
+    </div>
+  </div> -->
+  <div *ngFor="let plan of plans; index as i">
+  <div class="my-5 mx-4 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between">
+    <div class="text-center">
+      <span style="font-weight: 600;">{{plan.planName}}</span>
+      <h1 class="my-2 font-weight-bold">{{plan.planPrice}}</h1>
+      <small class="text-uppercase text-secondary">{{plan.planValidity}}</small>
+    </div>
+    <div class="text-center text-uppercase text-secondary">
+      <small class="d-block" style="font-weight: 600;">Unlimited Calls</small>
+      <small class="d-block my-3" style="font-weight: 600;">5GB DATA PER Data</small>
+      <small class="d-block" style="font-weight: 600;">VIP OTT subscriptions</small>
+    </div>
+    <div class="text-center">
+      <button type="submit" (click)="submit1()" routerLink="/recharge" class="btn btn-primary text-white px-5 py-3"  style="border-radius: 30px;">Select Plan</button>
+    </div> 
+  </div>
+<br>
+
+    <!-- <table class="table table-striped table-bordered text-center">
+      <thead class="table-dark">
+          <tr>
+              <th>#</th>
+              <th>Plan Name</th>
+              <th>Price</th>
+              <th>Validity</th>
+              <th> Actions </th>
+          </tr>
+      </thead> -->
+      <!-- <tbody class="table-group-divider">
+          <tr *ngFor="let plan of plans; index as i">
+              <td class="p-3">{{i+1}}</td>
+              <td>{{plan.planName}}</td>
+              <td>{{plan.planPrice}}</td>
+              <td>{{plan.planValidity}}</td>
+              <td>
+                  <button >Submit</button>
+              </td>
+          </tr>
+      </tbody>
+  </table> -->
+
+
+
+
+  <!-- </div> -->
+ 
+<!-- 
+     <div *ngFor="let plan of plans">
+      <div>
+      <h2>{{plan.planName}}</h2>
+      <p>{{plan.planPrice}}</p>
+      <p>Validity: {{plan.planValidity}}</p>
+      <button (click)="submit1()">Recharge</button>
+      </div>>
+    </div> -->
+  
+</div>
