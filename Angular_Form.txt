@@ -1,0 +1,16 @@
+Angular Forms----
+
+Module.ts ->
+import {FormsModule} from @angular/forms;
+
+Component.html ->
+Name:<input type="text" name="name" [(ngModel)]="name">
+
+<button (click)="submit()">Submit</button>
+
+Component.ts ->
+name:string="";
+
+submit(){
+console.warn(this.name);
+}
